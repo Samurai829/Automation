@@ -3,7 +3,12 @@ version: '3.9'
 services:
   grafana:
     image: grafana/grafana
-    container_name: grafana
+    container_name: Grafana
+    volumes:
+      - ./datasource/grafana.ini:/etc/grafana/grafana.ini
+      - ./datasource/datasource.yml:/etc/grafana/provisioning/datasources/datasource.yml
     ports:
       - 3000:3000
+    links: 
+      - prometheus
     restart: unless-stopped
