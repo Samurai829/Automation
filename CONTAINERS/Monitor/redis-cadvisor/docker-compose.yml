@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+
+  cadvisor:
+    image: google/cadvisor
+    container_name: cadvisor
+    ports:
+      - 8080:8080
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    depends_on:
+        - redis
+
+  redis:
+    image: redis:alpine3.16
+    container_name: redis
+    ports:
+      - 6379:6379
+    restart: unless-stopped
+    networks:
+      - redis
+       
+
+networks:
+  redis:
+    driver: bridge
+    name: redis
