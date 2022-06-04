@@ -18,7 +18,7 @@ build_grafana:
 	cd grafana && docker-compose up -d
 	docker ps --filter "status=running"
 
-build_redis_cadvisor:
+build_redis:
 	@echo 'Construccion y ejecucion de $(NAME-3)'
 	cd redis && docker-compose up -d
 	docker ps --filter "status=running"
@@ -50,7 +50,7 @@ stop_grafana:
 	@echo 'Parar ejecucion de $(NAME-2)'
 	cd grafana && docker-compose stop $(NAME-2)
 
-stop_redis_cadvisor:
+stop_redis:
 	@echo 'Parar ejecucion de $(NAME-3)'
 	cd redis && docker-compose stop $(NAME-3)
 
