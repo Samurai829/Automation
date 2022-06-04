@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 
 # This program built for i386-pc-mingw32
 
-# Make data base, printed on Thu Jun 02 21:48:03 2022
+# Make data base, printed on Fri Jun 03 19:57:59 2022
 
 # Variables
 
@@ -30,7 +30,7 @@ HOMEDRIVE = C:
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # makefile
-CURDIR := f:/Repositorios/Automation
+CURDIR := f:/Repositorios/Automation/CONTAINERS/Monitor
 # default
 SHELL := sh.exe
 # environment
@@ -41,8 +41,8 @@ VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{"*":"es"},"_languagePac
 ONEDRIVE = C:\Users\Steven\OneDrive
 # environment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
-# makefile
-MAKEFILE_LIST := 
+# makefile (from `makefile', line 1)
+MAKEFILE_LIST :=  makefile
 # environment
 TMP = C:\Users\Steven\AppData\Local\Temp
 # environment
@@ -52,9 +52,9 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c73a8095-696c-44a9-869d-504b344fdf04-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-2338b9d8-e06d-4f00-a81e-293cf41a2e5a-sock
 # environment
-VSCODE_CWD = D:\Descargas\web-automation-master
+VSCODE_CWD = A:\Program Files\Microsoft VS Code\Microsoft VS Code
 # environment
 PATH = A:\Program Files\VMware\VMware Player\bin\;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\dotnet\;A:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\GnuWin32\bin;C:\Users\Steven\AppData\Local\Microsoft\WindowsApps;A:\Program Files\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\Steven\AppData\Local\GitHubDesktop\bin;C:\Users\Steven\AppData\Local\cloud-code\installer\google-cloud-sdk\bin;C:\Users\Steven\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\Google\Cloud SDK\google-cloud-sdk\bin
 # environment
@@ -63,6 +63,8 @@ COMMONPROGRAMW6432 = C:\Program Files\Common Files
 PROCESSOR_ARCHITECTURE = x86
 # environment
 USERPROFILE = C:\Users\Steven
+# makefile (from `makefile', line 9)
+NAME-4 = redis-exporter
 # environment
 ALLUSERSPROFILE = C:\ProgramData
 # environment
@@ -78,7 +80,7 @@ CLOUDSDK_METRICS_ENVIRONMENT = cloudcode.vscode
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_3128_HUGNKZNTKWLWLKHG
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_16660_XZYVCKJUYXPQMVFK
 # environment
 CLOUDSDK_METRICS_ENVIRONMENT_VERSION = 1.18.2
 # environment
@@ -118,7 +120,7 @@ MAKECMDGOALS := all
 # default
 MAKE_VERSION := 3.81
 # makefile
-.DEFAULT_GOAL := 
+.DEFAULT_GOAL := build_prometheus
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # automatic
@@ -135,6 +137,8 @@ PROCESSOR_ARCHITEW6432 = AMD64
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
+# makefile (from `makefile', line 6)
+NAME-1 = prometheus
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
 # environment
@@ -161,6 +165,8 @@ SYSTEMROOT = C:\Windows
 APPDATA = C:\Users\Steven\AppData\Roaming
 # environment
 TEMP = C:\Users\Steven\AppData\Local\Temp
+# makefile (from `makefile', line 7)
+NAME-2 = grafana
 # environment
 AMDRMPATH = C:\Program Files\AMD\RyzenMaster\
 # environment
@@ -183,16 +189,18 @@ SESSIONNAME = Console
 PROCESSOR_REVISION = 7100
 # environment
 MAKELEVEL := 0
+# makefile (from `makefile', line 8)
+NAME-3 = redis-cadvisor
 # environment
 LANG = C
 # environment
 PROCESSOR_LEVEL = 23
 # environment
-VSCODE_PID = 3128
+VSCODE_PID = 16660
 # environment
 USERDOMAIN_ROAMINGPROFILE = SH0GUN
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=9/107=8%
+# Load=94/1024=9%, Rehash=0, Collisions=9/114=8%
 
 # Pattern-specific Variable Values
 
@@ -203,7 +211,7 @@ USERDOMAIN_ROAMINGPROFILE = SH0GUN
 # C:\Program Files\Docker\Docker\resources\bin (key C:/Program Files/Docker/Docker/resources/bin, mtime 1652916087): 13 files, no impossibilities.
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1650679620): 32 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1652398239): 173 files, no impossibilities.
-# . (key f:/Repositorios/Automation, mtime 1654220883): 5 files, no impossibilities.
+# . (key f:/Repositorios/Automation/CONTAINERS/Monitor, mtime 1654300679): 9 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1650681861): 8 files, no impossibilities.
 # C:\Users\Steven\AppData\Local\cloud-code\installer\google-cloud-sdk\bin (key C:/Users/Steven/AppData/Local/cloud-code/installer/google-cloud-sdk/bin, mtime 1654128038): 30 files, no impossibilities.
 # C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin: could not be stat'd.
@@ -222,7 +230,7 @@ USERDOMAIN_ROAMINGPROFILE = SH0GUN
 # A:\Program Files\Microsoft VS Code\Microsoft VS Code\bin (key A:/Program Files/Microsoft VS Code/Microsoft VS Code/bin, mtime 1652913246): 4 files, no impossibilities.
 # C:\Program Files (x86)\GnuWin32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1653618549): 5 files, no impossibilities.
 
-# 3380 files, no impossibilities in 21 directories.
+# 3384 files, no impossibilities in 21 directories.
 
 # Implicit Rules
 
@@ -245,15 +253,71 @@ all:
 #  Modification time never checked.
 #  File has not been updated.
 
+stop_all:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 64):
+	@echo 'Detencion de todos los servicios'
+	$(MAKE) stop_prometheus
+	$(MAKE) stop_grafana
+	$(MAKE) stop_redis_cadvisor
+	$(MAKE) stop_exporter
+	docker ps --filter "status=running"		
+	@echo 'Todos los servicios de Monitor fueron detenidos'
+	
+
+build_prometheus:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 12):
+	@echo 'Construccion y ejecucion de $(NAME-1)'
+	cd prometheus && docker-compose up -d
+	docker ps --filter "status=running"
+	
+
+stop_redis_cadvisor:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 54):
+	@echo 'Parar ejecucion de $(NAME-3)'
+	cd redis-cadvisor && docker-compose stop $(NAME-3)
+	
+
+build_grafana:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 17):
+	@echo 'Construccion y ejecucion de $(NAME-2)'
+	cd grafana && docker-compose up -d
+	docker ps --filter "status=running"
+	
+
 # Not a target:
 makefile:
-#  A default, MAKEFILES, or -include/sinclude makefile.
 #  Implicit rule search has been done.
-#  File does not exist.
+#  Last modified 2022-06-02 23:36:04
 #  File has been updated.
-#  Failed to be updated.
+#  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build_monitor:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 35):
+	@echo 'Levantamiento de todo MONITOR'
+	$(MAKE) build_prometheus
+	$(MAKE) build_grafana
+	$(MAKE) build_redis_cadvisor
+	$(MAKE) build_exporter
+	docker ps --filter "status=running"
+	docker stats
+	
 
 # Not a target:
 .SUFFIXES:
@@ -261,30 +325,67 @@ makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-GNUmakefile:
-#  A default, MAKEFILES, or -include/sinclude makefile.
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+stop_exporter:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 58):
+	@echo 'Parar ejecucion de $(NAME-4)'
+	cd prometheus && docker-compose stop $(NAME-4)
+	
+
+build_redis_cadvisor:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 22):
+	@echo 'Construccion y ejecucion de $(NAME-3)'
+	cd redis-cadvisor && docker-compose up -d
+	docker ps --filter "status=running"
+	
+
+stop_prometheus:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 46):
+	@echo 'Parar ejecucion de $(NAME-1)'
+	cd prometheus && docker-compose stop $(NAME-1)
+	
+
+build_exporter:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 27):
+	@echo 'Construccion y ejecucion de $(NAME-4)'
+	cd redis-exporter && docker-compose up -d
+	docker ps --filter "status=running"
+	
+
+stop_grafana:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 50):
+	@echo 'Parar ejecucion de $(NAME-2)'
+	cd grafana && docker-compose stop $(NAME-2)
+	
 
 # files hash-table stats:
-# Load=5/1024=0%, Rehash=0, Collisions=0/16=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/25=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
 
 # No general (`VPATH' variable) search path.
 
-# # of strings in strcache: 0
-# # of strcache buffers: 0
-# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
-# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Jun 02 21:48:03 2022
+# Finished Make data base on Fri Jun 03 19:57:59 2022
 
  
 make.exe: *** No rule to make target `all'.  Stop.

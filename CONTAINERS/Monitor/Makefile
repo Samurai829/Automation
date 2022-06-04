@@ -5,7 +5,7 @@
 # CONSTRUCCION Y DESPLIEGUE DE MONITOR
 NAME-1 = prometheus
 NAME-2 = grafana
-NAME-3 = redis-cadvisor
+NAME-3 = redis
 NAME-4 = redis-exporter
 
 build_prometheus:
@@ -20,7 +20,7 @@ build_grafana:
 
 build_redis_cadvisor:
 	@echo 'Construccion y ejecucion de $(NAME-3)'
-	cd redis-cadvisor && docker-compose up -d
+	cd redis && docker-compose up -d
 	docker ps --filter "status=running"
 
 build_exporter:
@@ -35,7 +35,7 @@ build_monitor:
 	@echo 'Levantamiento de todo MONITOR'
 	$(MAKE) build_prometheus
 	$(MAKE) build_grafana
-	$(MAKE) build_redis_cadvisor
+	$(MAKE) build_redis
 	$(MAKE) build_exporter
 	docker ps --filter "status=running"
 	docker stats
@@ -52,7 +52,7 @@ stop_grafana:
 
 stop_redis_cadvisor:
 	@echo 'Parar ejecucion de $(NAME-3)'
-	cd redis-cadvisor && docker-compose stop $(NAME-3)
+	cd redis && docker-compose stop $(NAME-3)
 
 stop_exporter:
 	@echo 'Parar ejecucion de $(NAME-4)'
@@ -64,7 +64,7 @@ stop_all:
 	@echo 'Detencion de todos los servicios'
 	$(MAKE) stop_prometheus
 	$(MAKE) stop_grafana
-	$(MAKE) stop_redis_cadvisor
+	$(MAKE) stop_redis
 	$(MAKE) stop_exporter
 	docker ps --filter "status=running"		
 	@echo 'Todos los servicios de Monitor fueron detenidos'

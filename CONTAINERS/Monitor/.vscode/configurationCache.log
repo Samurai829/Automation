@@ -1,0 +1,1 @@
+{"buildTargets":["build_exporter","build_grafana","build_monitor","build_prometheus","build_redis_cadvisor","stop_all","stop_exporter","stop_grafana","stop_prometheus","stop_redis_cadvisor"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
