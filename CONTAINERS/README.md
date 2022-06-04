@@ -3,3 +3,9 @@
 ## Que veras dentro de este Directorio? 🤔
 
 Todo lo relacionado a la creacion o ejecucion **AUTOMATICA** de contenedores Docker, Asi de sencillo no hay mas detalles.. 🤣
+
+## REQUERIMIENTOS
+
+Es necesario tener instalados **Docker** y **Make** como minimo para poder 
+usar los recusos de esta seccion de **CONTAINERS**, las demas tendran sus 
+requisitos leer con atencion.

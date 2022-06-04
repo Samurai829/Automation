@@ -25,7 +25,7 @@ deseas detener de monitor.
 Por igual solo debes usar `delete_monitor` o indicar cual es el **Servicio (Contenedor)** que 
 deseas eliminar de monitor.
 
-## Info
+## INFORMACION IMPORTANTE
 
 Esta SECCION puedes usarla para Monitorear, ademas si deseas puedes editar y mejorar su uso si 
 deseas ya que es totalmente personalizable y facil de escalar.
