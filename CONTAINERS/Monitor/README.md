@@ -6,7 +6,10 @@ de recursos y mas en el sistema, todo esto ha sido compilado en varios Docker Co
 decidido correrlo en **Makefile** para asi automatizarlo con solo un comando el cual seria 
 `Make build_monitor` en la consola de comandos de windows o terminal de linux.
 
-NOTA: Es requerido tener instalado **Make** y **Docker** para poder usarlo sin problemas.
+Actualmente **Monitor** se encuentra en su `version:1.2`, posiblemente existan mas 
+actualizaciones a medida que salgan nuevas herramientas o tenga nuevas ideas a desarrollar.
+
+NOTA: Para usarlo es requerido tener instalado **Make** y **Docker** para poder usarlo sin problemas.
 ## Como usarlo?
 
 ### EJECUCION:
