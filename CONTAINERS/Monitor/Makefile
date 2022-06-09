@@ -178,10 +178,9 @@ delete_images: ## Eliminacion de todas las imagenes de Monitor
 
 # ELIMINACION DE TODOS MONITOR EN UN SOLO COMANDO
 deep_delete: ## Eliminacion de todo Monitor
-	@echo 'Eliminando Imagenes, Contenedores y Networks de MONITOR'
+	@echo 'Eliminando Imagenes y Contenedores de MONITOR'
 	$(MAKE) delete_monitor
 	$(MAKE) delete_images
-	docker network rm prometheus redis
 
 
 #----------------------------------------------------------------------------------------
