@@ -6,10 +6,11 @@ de recursos y mas en el sistema, todo esto ha sido compilado en varios Docker Co
 decidido correrlo en **Makefile** para asi automatizarlo con solo un comando el cual seria 
 `Make build_monitor` en la consola de comandos de windows o terminal de linux.
 
-Actualmente **Monitor** se encuentra en su `version:1.2`, posiblemente existan mas 
+Actualmente **Monitor** se encuentra en su `version:1.7`, posiblemente existan mas 
 actualizaciones a medida que salgan nuevas herramientas o tenga nuevas ideas a desarrollar.
 
 NOTA: Para usarlo es requerido tener instalado **Make** y **Docker** para poder usarlo sin problemas.
+
 ## Como usarlo?
 
 ### EJECUCION:
@@ -26,7 +27,13 @@ deseas detener de monitor.
 
 ### ELIMINACION:
 Por igual solo debes usar `delete_monitor` o indicar cual es el **Servicio (Contenedor)** que 
-deseas eliminar de monitor.
+deseas eliminar de monitor, ahora si deseas eliminar todo Monitor de raiz (Imagenes, contenedores y Networks) 
+debes usar `deep_delete` y no tendras los archivos mencionados.
+
+### EXISTEN MAS COMANDOS:
+Para ver todos los comandos puedes ver el archivo `Makefile` y tendras comentarios que indicara
+sus funciones, ahora si usas estos archivos en Linux puedes usar el **comando** `Make help` para
+poder ver todas las funciones.
 
 ## INFORMACION IMPORTANTE
 
