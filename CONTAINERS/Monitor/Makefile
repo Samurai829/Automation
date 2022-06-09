@@ -59,7 +59,7 @@ show_containers: ## Muesta contenedores en ejecucion
 	docker ps --filter "status=running"
 
 show_all: ## Muesta images y contenedores
-@echo 'Visualizacion de IMAGENES'
+	@echo 'Visualizacion de IMAGENES'
 	docker images -a 
 	@echo 'Visualizacion de CONTENEDORES en ejecucion'
 	docker ps --filter "status=running"
